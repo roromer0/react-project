@@ -1,0 +1,27 @@
+.img{
+    width : 85%;
+    margin: auto;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+h3{
+font-size: 3rem;
+color: #CD9452;
+font-family: Poppins;
+font-weight: 400;
+font-size: 1.75rem;
+margin: auto;
+margin-top: 3rem;
+}
+h4{
+font-size: 3rem;
+color: black;
+font-family: Poppins;
+font-weight: 600;
+font-size: 3rem;
+margin: auto;
+}
