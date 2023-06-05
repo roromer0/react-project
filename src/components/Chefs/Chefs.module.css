@@ -1,27 +1,186 @@
-.img{
-    width : 85%;
-    margin: auto;
+.img {
+  width: auto;
+  position: relative;
 }
-div{
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  color: #cd9452;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1rem;
+  /* margin: auto; */
+  margin-top: 3rem;
+}
+h4 {
+  font-size: 3rem;
+  color: black;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 2rem;
+  /* margin: auto; */
+}
+.hover:hover {
+  position: relative;
+  opacity: 50%;
+}
+.icono {
+  position: absolute;
+  margin-top: 35rem;
+  margin-left: auto;
+  color: white;
+  font-size: 2rem;
+}
+.orange {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  height: 43.8rem;
+  width: 25rem;
+  background-color: #d7a975;
+}
+@media (max-width: 819px) {
+    .hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .orange {
+    height: 0.1rem;
+    width: o.1rem;
+    opacity: 0%;
+  }
+  .cardsContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+
+  }
+ 
+  .chefcard{
+    margin: auto;
+  }
+  .img {
+    width: 20rem;
+    margin: 1.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+    color: #cd9452;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5rem;
+    /* margin: auto; */
+    margin-top: 3rem;
+  }
+  h4 {
+    font-size: 3rem;
+    color: black;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 2rem;
+    /* margin: auto; */
+  }
+
 }
-h3{
-font-size: 3rem;
-color: #CD9452;
-font-family: Poppins;
-font-weight: 400;
-font-size: 1.75rem;
-margin: auto;
-margin-top: 3rem;
+
+@media (min-width: 820px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    font-size: 2rem;
+    color: #cd9452;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-top: 1.5rem;
+  }
+  h4 {
+    font-size: 3rem;
+    color: black;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .img {
+    width: 25rem;
+  }
+  .orange {
+    height: 0.1rem;
+    width: 0.1rem;
+    opacity: 0%;
+  }
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
+  .cardsContainer .chefcard {
+    width: calc(50% - 0.5rem); /* Mostrar dos elementos en una fila */
+  }
+  .hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h4{
-font-size: 3rem;
-color: black;
-font-family: Poppins;
-font-weight: 600;
-font-size: 3rem;
-margin: auto;
+}
+@media (min-width: 1000px) {
+    .hover{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .cardsContainer .chefcard {
+    flex-basis: 25%; /* Mostrar todas las chefcard en una sola fila */
+    max-width: 25%;
+    margin-right: 1rem;
+    margin-left: 3rem; /* Agregar espacio entre las imágenes */
+  }
+  .cardsContainer {
+    margin-left: -3rem;
+  }
+  .cardsContainer .chefcard:last-child {
+    margin-right: 0; /* No aplicar margen a la última imagen */
+  }
+
+  .img {
+    width: 27rem;
+  }
+
+  .orange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 43.8rem;
+    width: 25rem;
+    background-color: #d7a975;
+  }
+  .hover:hover {
+    position: relative;
+    opacity: 50%;
+  }
 }
